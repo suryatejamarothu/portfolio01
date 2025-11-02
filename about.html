@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Suryateja</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    /* Additional styles for the about page */
+    .profile-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 50px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      max-width: 1200px;
+      margin: 80px auto;
+    }
+
+    .profile-card {
+      flex: 1;
+    }
+
+    .profile-card h1 {
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      border-bottom: 3px solid #4CAF50;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+
+    .about-section {
+      margin-bottom: 30px;
+    }
+
+    .about-section h2 {
+      color: #4CAF50;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .about-section h2 i {
+      font-size: 1.2rem;
+    }
+
+    .about-section p {
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .about-image-right {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .profile-img-circular {
+      width: 200px; /* Reduced from 250px */
+      height: 200px; /* Reduced from 250px */
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(135deg, #4CAF50, #2196F3) border-box;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img-circular:hover {
+      transform: scale(1.05);
+    }
+
+    .quick-info {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 10px;
+      border-left: 4px solid #4CAF50;
+      width: 100%;
+    }
+
+    .quick-info h3 {
+      color: #333;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    .quick-info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .quick-info li {
+      padding: 8px 0;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .quick-info li:last-child {
+      border-bottom: none;
+    }
+
+    .quick-info li i {
+      color: #4CAF50;
+      width: 20px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 968px) {
+      .profile-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        margin: 60px 20px;
+      }
+
+      .about-image-right {
+        order: -1;
+      }
+
+      .profile-img-circular {
+        width: 180px;
+        height: 180px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .profile-section {
+        padding: 20px;
+        margin: 40px 15px;
+      }
+
+      .profile-card h1 {
+        font-size: 2rem;
+      }
+
+      .profile-img-circular {
+        width: 150px;
+        height: 150px;
+      }
+
+      .quick-info {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <nav>
+      <h2 class="logo">MyResume</h2>
+      <ul class="nav-links">
+        <li><a href="index.html" style="text-decoration: none; color: inherit;">Home</a></li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Portfolio</li>
+        <li>Experience</li>
+        <li><a href="education.html" style="text-decoration: none; color: inherit;">Education</a></li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="profile-section">
+    <div class="profile-card">
+      <h1>About Me</h1>
+      
+      <!-- Introduction Section -->
+      <div class="about-section">
+        <h2><i class="fas fa-user"></i> Introduction</h2>
+        <p>Hello! I'm <strong>Suryateja Marothu</strong>, a dedicated and passionate software developer based in Andhra Pradesh, India.</p>
+        <p>I specialize in building web applications and writing clean, efficient code. With a solid foundation in multiple programming languages including <strong>HTML, CSS, Java, Python, and C</strong>, I aim to develop solutions that are both user-friendly and technically robust.</p>
+      </div>
+
+      <!-- Current Focus Section -->
+      <div class="about-section">
+        <h2><i class="fas fa-bullseye"></i> Current Focus</h2>
+        <p>Currently, I am pursuing my studies while simultaneously working on enhancing my technical skills through hands-on projects, problem-solving challenges, and learning new technologies. I enjoy solving real-world problems and always look forward to opportunities that challenge me to grow as a developer.</p>
+      </div>
+
+      <!-- Interests Section -->
+      <div class="about-section">
+        <h2><i class="fas fa-heart"></i> Interests & Hobbies</h2>
+        <p>Outside of coding, I enjoy reading tech blogs, exploring open-source projects, and engaging in discussions about emerging technologies.</p>
+      </div>
+
+      <!-- Career Goals Section -->
+      <div class="about-section">
+        <h2><i class="fas fa-flag"></i> Career Goals</h2>
+        <p><strong>Career Goal:</strong> To become a full-stack software engineer capable of designing scalable web applications and contributing meaningfully to the tech industry.</p>
+      </div>
+
+      <!-- Core Values Section -->
+      <div class="about-section">
+        <h2><i class="fas fa-star"></i> Core Values</h2>
+        <p><strong>Core Values:</strong> Continuous Learning, Simplicity in Code, and Collaboration.</p>
+      </div>
+    </div>
+
+    <div class="about-image-right">
+      <img src="sury.jpg" alt="Suryateja Marothu" class="profile-img-circular">
+      
+      <!-- Quick Info Box -->
+      <div class="quick-info">
+        <h3>Quick Info</h3>
+        <ul>
+          <li><i class="fas fa-graduation-cap"></i> B.Tech Student (CSE(AI&DS) - Vel Tech University</li>
+          <li><i class="fas fa-laptop-code"></i> Focus: Web Development, Software Engineering</li>
+          <li><i class="fas fa-code"></i> Languages: Java, Python, HTML/CSS, C</li>
+          <li><i class="fas fa-rocket"></i> Goal: Full Stack Developer / Software Engineer</li>
+          <li><i class="fas fa-briefcase"></i> Available for internships & freelance projects</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
